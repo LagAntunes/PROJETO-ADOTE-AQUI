@@ -1,0 +1,280 @@
+/* início da formatação do fundo da página */
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+/* fim da formatação do fundo da página */
+
+/* início da formatação da header */
+header {
+    width: 100%;
+    display: flex;
+}
+
+.logo {
+    background-color: #e3d486;
+    width: 70%;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo a:hover {
+    font-size: larger;
+    color:khaki;
+}
+
+.navegaçao {
+    background-color: #c4af45;
+    width: 30%;
+    padding: 10px;
+}
+
+.navegaçao a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+}
+
+.navegaçao a:hover {
+    font-size: larger;
+    color:khaki;
+}
+
+.between {
+    display: flex;
+    justify-content: space-between;
+}
+/* fim da formatação da header */
+
+/* início da formatação da section paralax */
+.paralax {
+    background-image: url("/imagens/topo.jpg");
+    background-attachment: fixed;
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.titulo {
+    font-size: 0.9em;
+    padding: 25px;
+    margin-right: 200px;
+}
+
+.titulo h1 {
+    margin-top: 36%;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.titulo h2 {
+    margin-top: 2%;
+    margin-bottom: 1%;
+    color: white;
+    text-shadow: 3px 3px black;
+}
+
+.titulo h2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.titulo h2 a:hover {
+    color: khaki;
+}
+
+.botao-paralax input {
+    padding: 12px;
+    font-size: 1em;
+    width: 25%;
+    color: #c4af45;
+    font-weight: bolder;
+    border-radius: 25px;
+    border-color: #c4af45;
+    cursor: pointer;
+}
+
+.botao-paralax input:hover {
+    color: white;
+    background-color: #c4af45 ;
+    border-color: white;
+}
+/* fim da formatação da section paralax */
+
+/* início da formatação da section principal*/
+.fundo {
+    background-color: white;
+}
+
+.principal {
+    width: 80%;
+    margin-top: 15px;
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.coluna-fixa {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-fixa img {
+    width: 240px;
+    height: 340px;
+    border-radius: 20px;
+}
+
+.coluna-normal1 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-normal1 img {
+    width: 240px;
+    height: 340px;
+    border-radius: 20px;
+}
+
+.coluna-normal2 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-normal2 img {
+    width: 240px;
+    height: 340px;
+    border-radius: 20px;
+}
+
+.coluna-normal3 {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.coluna-normal3 img {
+    width: 240px;
+    height: 340px;
+    border-radius: 20px;
+}
+
+.imagens {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.botao {
+    display: flex;
+    background-color: #e3d486;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 45px;
+    margin-right: 45px;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 15px;
+}
+
+.botao:hover {
+    background-color: #c4af45;
+}
+
+/* fim da formatação da section principal */
+
+/* início da formatação do footer */
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #e3d486;
+    padding: 15px;
+}
+
+.assinatura {
+    color: white;
+    text-shadow: 1.5px 1px black;
+    font-size: 0.9em;
+}
+
+.icones {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 40px;
+}
+
+.icones a i {
+    color: white;
+}
+
+.icones a i:hover {
+    color: #c4af45;
+}
+/* fim da formatação do footer */
+
+/* início da formatação da media query */
+@media only screen and (max-width: 700px) {
+    .logo {
+        display: none;
+    }
+
+    .titulo h2 {
+        margin-top: 15px;
+    }
+
+    .botao-paralax input {
+        margin-top: 50px;
+        width: 75%;
+    }
+
+    .navegaçao {
+        width: 100%;
+    }
+
+    .between {
+        flex-direction: column;
+    }
+
+    .coluna-normal {
+        display: none;
+    }
+
+    .icones {
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        font-size: 35px;
+    }
+  }
+
+  @media only screen and (max-width: 1000px) {
+    .coluna-normal1 {
+        display: none;
+    }
+
+    .coluna-normal2 {
+        display: none;
+    }
+
+    .coluna-normal3 {
+        display: none;
+    }
+  }
+/* fim da formatação da media query */
