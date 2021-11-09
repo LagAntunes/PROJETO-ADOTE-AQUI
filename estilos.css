@@ -58,7 +58,7 @@ header {
 
 /* início da formatação da section paralax */
 .paralax {
-    background-image: url("/imagens/topo.jpg");
+    background-image: url("./imagens/topo.jpg");
     background-attachment: fixed;
     background-position:center;
     background-repeat: no-repeat;
